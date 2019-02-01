@@ -1,107 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Page title shown in window title</title>
-        <meta charset="utf-8"/>
-        <style>
-          th {
-              text-align: center;
-          }
-          ul {
-              text-align: left;
-          }
-          </style>
-    </head>
-    <body>
-      <main>
-        <h1>Välkommen till BurgerOnline</h1>
-        <section>
-          <h3>Select burger</h3>
-          <h5>This is where you execute burger selection</h5>
-          <table>
-            <tbody>
-              <tr>
-                <th>McChicken</th>
-                <Th>McVeg</th>
-                <th>McBeef</th>
-              </tr>
-              <tr>
-                <th>
-                  <img src="https://cdn-image.myrecipes.com/sites/default/files/styles/medium_2x/public/carolina-chicken-burgers-ancho-slaw-sl.jpg?itok=GUhe0VCF" alt="McChicken" height="250" width="300">
-                </th>
-                <th>
-                  <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/05/veggie-burger-recipe-5-500x500.jpg" alt="McChicken" height="250" width="300">
-                </th>
-                <th>
-                  <img src="https://www.seriouseats.com/recipes/images/2015/07/20150702-sous-vide-hamburger-anova-primary-1500x1125.jpg" alt="McChicken" height="250" width="300">
-                </th>
-              <tr>
-                <th>
-                  <ul>
-                    <li>Chicken-burger</li>
-                    <li>Contains gluten</li>
-                    <li>Väldigt coool</li>
-                  </ul>
-                </th>
-                <th>
-                  <ul>
-                    <li>Soya-burger</li>
-                    <li>Contains green stuff</li>
-                    <li>Också coool</li>
-                  </ul>
-                </th>
-                <th>
-                  <ul>
-                    <li>Beaf-burger</li>
-                    <li>Contains gluten</li>
-                    <li>Också väldigt coool</li>
-                  </ul>
-                </th>
-              </tr>
-              
-            </tbody>
-          </table>
-        </section>
-        <section id="contact">
-          <h3>Customer information</h3>
-          <h5>This is where you provide necessary information</h5>
-          <form>
-            <p>
-              <label for="name">Full name</label><br>
-              <input type="text" id="name" name="n" required="required" placeholder="First- and Last name">
-            </p>
-            <p>
-              <label for="email">E-mail</label><br>
-              <input type="text" id="email" name="em" required="required" placeholder="E-mail address">
-            </p>
-            <p>
-              <label for="street">Street</label><br>
-              <input type="text" id="street" name="s" required="required" placeholder="Street name">
-            </p>
-            <p>
-              <label for="house">House</label><br>
-              <input type="text" id="house" name="h" required="required" placeholder="House number">
-            </p>
-            <label for="payment">Payment options</label><br>
-            <select id="payment" name="rcp">
-              <option>Invoice</option>
-              <option>Credit card</option>
-              <option>Swish</option>
-            </select>
-            <br>
-            <br>
-            <input type="radio" name="gender" value="male"> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br>
-            <input type="radio" name="gender" value="do not wish to provide"> do not wish to provide <br>
-            <br>
-          </form>
-        </section>
-        <button type="submit"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrmzOC85tuT59TgXCPwSRg-o7FaUAwvNXMrMcdjYYkWdSEpbf-" height="60" width="180"></button>
+  <head>
+    <title>Page title shown in window title</title>
+    <meta charset="utf-8"/>
+    <style>
+      th {
+          text-align: center;
+      }
+
+      h4 {
+          text-align: center;
+      }
+      
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <section id="welcome_picture">
+      <div id="welcome">
+        <h1>Welcome to BurgerOnline</h1>
+      </div>
+      <div id="picture">
+        <img src="http://www.franxbar.com/images/menu_header.jpg">
+      </div>
+    </section>
+    <section id="burger">
+      <div id="burger_text">
+        <h3>Select burger</h3>
+        <h5>This is where you execute burger selection</h5>
+      </div>
+
+      <div class="wrapper">
+        <div class="burger 1">
+          <h4>McChicken</h4>
+          <img src="https://cdn-image.myrecipes.com/sites/default/files/styles/medium_2x/public/carolina-chicken-burgers-ancho-slaw-sl.jpg?itok=GUhe0VCF" alt="McChicken" height="250" width="290">
+          <ul>
+            <section class="food">
+              <li>Chicken-burger</li>
+              <li>Contains gluten</li>
+              <li>Väldigt coool</li>
+            </section>
+          </ul>
+        </div>
+        <div class="burger 2">
+          <h4>McVeg</h4>
+          <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/05/veggie-burger-recipe-5-500x500.jpg" alt="McChicken" height="250" width="290">
+          <th>
+            <section class="food">
+              <ul>
+                <li>Soya-burger</li>
+                <li>Contains green stuff</li>
+                <li>Också coool</li>
+              </ul>
+            </section>
+          </th>
+        </div>
+        <div class="burger 3">
+          <h4>McBeef</h4>
+          <img src="https://www.seriouseats.com/recipes/images/2015/07/20150702-sous-vide-hamburger-anova-primary-1500x1125.jpg" alt="McChicken" height="250" width="290">
+          <section class="food">
+            <ul>
+              <li>Beaf-burger</li>
+              <li>Contains gluten</li>
+              <li>Också väldigt coool</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <section class="text_over_form">
+      <h3>Customer information</h3>
+      <h5>This is where you provide necessary information</h5>
+      </section>
+      <form>
+        <p>
+          <label for="name">Full name</label><br>
+          <input type="text" id="name" name="n" required="required" placeholder="First- and Last name">
+        </p>
+        <p>
+          <label for="email">E-mail</label><br>
+          <input type="text" id="email" name="em" required="required" placeholder="E-mail address">
+        </p>
+        <p>
+          <label for="street">Street</label><br>
+          <input type="text" id="street" name="s" required="required" placeholder="Street name">
+        </p>
+        <p>
+          <label for="house">House</label><br>
+          <input type="text" id="house" name="h" required="required" placeholder="House number">
+        </p>
+        <label for="payment">Payment options</label><br>
+        <select id="payment" name="rcp">
+          <option>Invoice</option>
+          <option>Credit card</option>
+          <option>Swish</option>
+        </select>
         <br>
-      </main>
-      <footer>
-        <hr>
-        © 2018 Hypothetical Burgers Inc.
-      </footer>
-    </body>
+        <br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="do not wish to provide"> do not wish to provide <br>
+        <br>
+      </form>
+    </section>
+    <button type="submit"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrmzOC85tuT59TgXCPwSRg-o7FaUAwvNXMrMcdjYYkWdSEpbf-" height="60" width="180"></button>
+    <br>
+    </main>
+    <footer>
+      <hr>
+      © 2018 Hypothetical Burgers Inc.
+    </footer>
+  </body>
 </html>
